@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ch#erifob$-m25fm&c7tcol8j)+7vzbm$($x=$-&e*^s4c+ta!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000','menuuq.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -137,10 +137,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATIC_URL = '/static/'
 
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"shop/static/images"),
-]
-MEDIA_URL="/uploads/products/"
-MEDIA_ROOT=BASE_DIR
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,"shop/static/images"),
+# ]
+# MEDIA_URL="/uploads/products/"
+# MEDIA_ROOT=BASE_DIR
 # django_heroku.settings((locals))
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# MEDIA_ROOT=BASE_DIR
+# STATIC_URL = '/static/'
+
+STATIC_URL = '/static/'
+MEDIA_URL = "/uploads/products/"
+MEDIA_ROOT = BASE_DIR
