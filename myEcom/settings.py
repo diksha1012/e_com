@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-import django_heroku
+# import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -126,13 +126,21 @@ USE_TZ = True
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR,"shop/static/images"),
 # ]
-MEDIA_URL="/uploads/products/"
-MEDIA_ROOT=BASE_DIR
+# MEDIA_URL="/uploads/products/"
+# MEDIA_ROOT=BASE_DIR
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# STATIC_URL = '/static/'
+
+
 STATIC_URL = '/static/'
-django_heroku.settings((locals))
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"shop/static/images"),
+]
+MEDIA_URL="/uploads/products/"
+MEDIA_ROOT=BASE_DIR
+# django_heroku.settings((locals))
