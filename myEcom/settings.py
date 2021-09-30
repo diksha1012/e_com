@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ch#erifob$-m25fm&c7tcol8j)+7vzbm$($x=$-&e*^s4c+ta!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['menuuq.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['mymenuq.herokuapp.com','127.0.0.1:8000']
 
 
 # Application definition
@@ -123,9 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 # STATIC_URL = '/static/'
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR,"shop/static/images"),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"shop/static/images"),
+]
 # MEDIA_URL="/uploads/products/"
 # MEDIA_ROOT=BASE_DIR
 
@@ -138,17 +138,22 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # STATIC_URL = '/static/'
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR,"shop/static/images"),
-# ]
+
 # MEDIA_URL="/uploads/products/"
 # MEDIA_ROOT=BASE_DIR
 # django_heroku.settings((locals))
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# MEDIA_ROOT=BASE_DIR
-# STATIC_URL = '/static/'
-
+MEDIA_ROOT=BASE_DIR
 STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_URL = '/static/'
 MEDIA_URL = "/uploads/products/"
-MEDIA_ROOT = BASE_DIR
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# MEDIA_ROOT = BASE_DIR
