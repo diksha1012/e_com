@@ -1,3 +1,2 @@
-web: gunicorn myEcom.wsgi 
-web: python src/server.py
-release: python manage.py runserver
+web: waitress-serve --port=$PORT myEcom.wsgi:application
+
