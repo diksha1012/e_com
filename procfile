@@ -1,2 +1,3 @@
 web: gunicorn myEcom.wsgi 
+web: python src/server.py
 release: python manage.py runserver
