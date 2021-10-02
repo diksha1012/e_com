@@ -162,7 +162,6 @@ MEDIA_URL = "/uploads/products/"
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT=BASE_DIR
 if DEBUG:
    STATICFILES_DIRS = [
           os.path.join(BASE_DIR,"static"),
@@ -170,6 +169,7 @@ if DEBUG:
 
 else:
       STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT=BASE_DIR
 
 
 
