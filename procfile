@@ -1,1 +1,2 @@
-web: gunicorn myEcom.wsgi --log-file -
+web: gunicorn myEcom.wsgi 
+release: python manage.py runserver
