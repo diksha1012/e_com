@@ -148,7 +148,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATIC_URL = '/static/'
-MEDIA_URL = "/uploads/products/"
+MEDIA_URL = "uploads/products/"
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -162,10 +162,10 @@ MEDIA_URL = "/uploads/products/"
 # django_heroku.settings((locals))
 
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT=os.path.join(BASE_DIR,"/uploads/products/")
+MEDIA_ROOT=os.path.join(BASE_DIR,"uploads/products/")
 
 
 
